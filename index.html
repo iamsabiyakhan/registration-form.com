@@ -1,0 +1,79 @@
+<html>
+<head>
+    
+    <style>  
+        div{  
+                             background-color: #7fffd4;   
+            height: 500px; width: 1300px;  
+         }  
+
+
+
+     </style>
+     
+
+   
+     
+
+</head>
+<body style="text-align:center;">
+    <div>
+        <h1 style="text-align:center;">REGISTRATION FORM</h1>
+        <form action="RgistrationServlet" method="post">
+        <title>REGISTRATION</title>
+    <form action="#" method="post">
+    <label for="name">NAME</label>
+    <input type=text id="name" name="name"required><br><br>
+    <label for="id">ID NO.:</label>
+    <input type=text id="id" name="id"required><br><br>
+    <label for="email">E-MAIL:</label>
+    <input type=text id=mail name="email"required><br><br>
+    <label for="programe">programe code:</label>
+    <select>
+        <option value=bca> BCA</option>
+        <option value=ba> BA</option>
+        <option value=bcom>BCOM</option>
+        <option value=bsc> BSC</option>
+        <option value=btech>BTECH</option>
+
+
+    </select><br><br>
+    <label for="course">COURSE:</label>
+    <select name="select" id="course">
+        <option value= bachlor of computer app>bachlor of computer app</option>
+        <option value=bachoolr of arts>bachoolr of arts</option>
+        <option value=bachlors of commerse>bachlors of commerse</option>
+        <option value=bachlors of science> bachlors of science</option>
+        <option value=bachlors of techno>bachlors of techno</option>
+
+
+    </select><br><br>
+
+    payment mode:<input type="radio"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  credit:<input type="radio">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp   debit:<input type="radio"><br><br>
+    <button style=color:red value="submit">submit</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button style=color:blue value="reset">reset</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button style=color:violet value="upload">upload</button>
+
+   
+
+
+</form>
+<script>
+
+     function resetForm() {
+          document.getElementById("name").value = "";
+          document.getElementById("id").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("programe").value = "";
+          document.getElementById("course").value = "";
+
+     }
+
+</script>
+
+</div>
+
+</body>
+
+</html>
